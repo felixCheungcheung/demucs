@@ -33,11 +33,11 @@ from demucs.pretrained import SOURCES
 from demucs.wav import build_metadata, Wavset, _get_musdb_valid
 
 
-MUSDB_PATH = '/checkpoint/defossez/datasets/musdbhq'
+MUSDB_PATH = 'E:/musdb18_hq'
 EXTRA_WAV_PATH = "/checkpoint/defossez/datasets/allstems_44"
 # WARNING: OUTPATH will be completely erased.
-OUTPATH = Path.home() / 'tmp/demucs_mdx/automix_musdb/'
-CACHE = Path.home() / 'tmp/automix_cache'  # cache BPM and pitch information.
+OUTPATH = Path('E:/automix_musdb')
+CACHE = Path('E:/automix_cache')  # cache BPM and pitch information.
 CHANNELS = 2
 SR = 44100
 MAX_PITCH = 3  # maximum allowable pitch shift in semi tones
